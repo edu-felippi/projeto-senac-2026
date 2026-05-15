@@ -6,7 +6,6 @@ O objetivo do projeto **Viajei** é compartilhar das experiências que vivemos p
 > [!WARNING]
 > O **Viajei**, por razões apropriadas, é indicado para maiores de 14 (quartorze) anos. **Não recomendamos** que pessoas com idade menor do indicado, tenham acesso à plataforma.
 
-
 ## O que será?
 
 O Viajei será uma plataforma em que os usuários poderão, individualmente, compartilhar suas experiências, e também, recomendar outras tantas para pessoas que acessarem essa plataforma.
@@ -33,5 +32,4 @@ TODO:
 ## Licença:
 
 Esse projeto é amparado pela licença [MIT](./LICENSE)
-
 
