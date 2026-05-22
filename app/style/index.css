@@ -6,75 +6,51 @@ body {
     height: 100vh;
     width: 100vw;
     margin: 0;
-}
-
-@media (max-width: 500px) {
-    #container header {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: row;
-        width: 100%;
-    }
-
-    .link-do-cabecalho {
-        font-weight: 500;
-        font-size: 12pt;
-        padding: 5px 10px;
-        border-radius: 15px;
-    }
-
-    #container section b {
-        font-size: 30pt;
-    }
-
-    #container section p {
-        font-size: 15pt;
-    }
+    background-color: rgba(112, 216, 202, 0.5);
 }
 
 #container {
+    width: 80%;
     height: 100%;
     margin: 0 auto;
-    background-color: #fafafa;
+}
+
+#container header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: rgba(36, 147, 132, 0.5);
+    box-shadow: 5px 5px 7px 0px rgb(34, 106, 134);
+}
+
+#container header img {
+    max-width: 80px;
+}
+
+#container header .toggle {
+    display: none;
+    height: 20px;
+    width: 20px;
+}
+
+.link-do-cabecalho {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-right: 15px;
+    color: #fffdf5;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-weight: bold; /*500*/
+    font-size: 15pt;
+    padding: 12px 25px;
+    background-color: rgb(56, 156, 187);
+    border-radius: 15px;
 }
 
 #container section {
     width: 100%;
     height: 80vh;
-    background-repeat: no-repeat;
-}
-
-header {
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: rgba(36, 147, 132, 0.5);
-    border-right: 6px solid rgb(34, 106, 134);
-    border-bottom: 6px solid rgb(34, 106, 134);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 5px;
-}
-
-header img {
-    max-height: 100%;
-    margin: auto 0;
-}
-
-header a {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 500;
-    font-variant: small-caps;
-    text-decoration: none;
-    color: #fffdf5;
-    font-size: 15pt;
-    padding: 10px 20px;
-    background-color: rgb(56, 156, 187);
-    border-radius: 15px;
 }
 
 header a:hover {
@@ -84,12 +60,12 @@ header a:hover {
     transition: box-shadow 0.5;
 }
 
-b {
+h1 {
     font-family: "Bubblegum Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 45pt;
-    line-height: 110px;
+    font-size: 40pt;
+    justify-content: space-evenly;
 }
 
 p {
@@ -98,3 +74,72 @@ p {
     font-style: normal;
     font-size: 20pt;
 }
+
+@media (max-width: 650px) {
+    #container header {
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #container header img {
+        max-height: 80px;
+    }
+
+    #container header .toggle {
+        display: block;
+        border-right: 2px solid rgb(56, 156, 187);
+        border-bottom: 2px solid rgb(56, 156, 187);
+        transform: rotateZ(45deg);
+        cursor: pointer;
+        margin-top: -10px;
+        margin-right: 10px;
+    }
+
+    #container header a {
+        display: none;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        border-bottom: 1px solid rgb(34, 106, 134);
+        position: absolute;
+        z-index: 10;
+    }
+
+    #container header a:nth-of-type(1) { top: 100px; }
+    #container header a:nth-of-type(2) { top: 160px; }
+    #container header a:nth-of-type(3) { top: 220px; }
+
+    #container header.active .toggle {
+        display: block;
+        transform: rotate(225deg);
+        margin-top: 5px;
+    }
+
+    #container header.active a {
+        display: block;
+        background-color: rgb(56, 156, 187);
+        height: 60px;
+        width: 100%;
+        margin: 0;
+        border-top: 1px solid pink;
+        padding-left: 40px;
+    }
+
+    #container header.activate a:nth-of-type(1) {
+        bottom: 100px;
+    }
+
+    #container header.activate a:nth-of-type(2) {
+        bottom: 160px;
+    }
+
+    #container header.activate a:nth-of-type(3) {
+        bottom: 220px;
+        border-bottom: 2px solid pink;
+    }
+
+}
+
+
+
