@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/forms.css">
+    <script src="./scripts/menu.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Lacquer&display=swap');
+    </style>
+    <title>Viajei: Criar Blog</title>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <img src="./images/Logo_Viajei.png" alt="Logo.Viajei" />
+            <div class="toggle"></div>
+            <a class="link-do-cabecalho" href="./index.html">Viajei</a>
+            <a class="link-do-cabecalho" href="./about.html">Sobre</a>
+            <a class="link-do-cabecalho" href="./forms.html">Crie seu blog!</a>
+        </header>
+        <section>
+            <form action="submit">
+                <label for="usuario">Nome:</label>
+                <input type="text" id="usuario" name="nome">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+
+                <label for="historia">Sua História:</label><br>
+                <textarea name="historia" id="historia" cols="75" rows="30"></textarea><br>
+
+                <label for="data">Data:</label>
+                <input type="datetime-local" id="data" name="data">
+
+            </form>
+        </section>
+    </div>
+</body>
+
+
+</html>
