@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/forms.css">
     <script src="./scripts/menu.js" defer></script>
+    <script src="./scripts/forms.js" defer></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Lacquer&display=swap');
     </style>
@@ -22,21 +23,27 @@
             <a class="link-do-cabecalho" href="./forms.html">Crie seu blog!</a>
         </header>
         <section>
-            <form action="submit">
-                <label for="usuario">Nome:</label>
-                <input type="text" id="usuario" name="nome">
+            <form id="post-form">
+                <label for="autor"> Autor: </label>
+                <input id="autor" type="text" name="autor" placeholder="Fulano da Silva">
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email"><br>
+                <label for="titulo"> Título da história: </label>
+                <input id="titulo" type="text" name="titulo" placeholder="pensando ilimitado">
 
-                <label for="historia">Sua História:</label><br>
-                <textarea name="historia" id="historia" cols="75" rows="30"></textarea><br>
+                <label for="email"> Email: </label>
+                <input id="email" type="email" name="email" placeholder="fulano123@example.com"><br>
 
-                <label for="data">Data:</label>
-                <input type="datetime-local" id="data" name="data">
+                <label for="historia"> Sua História: </label><br>
+                <textarea id="historia" cols="50" rows="20" name="historia"></textarea><br>
+
+                <button type="submit"> Enviar </button>
 
             </form>
         </section>
+
+        <footer>
+            <div id="historias"></div>
+        </footer>
     </div>
 </body>
 
