@@ -68,6 +68,10 @@ header a:hover {
     font-style: normal;
 }
 
+article.artigo {
+    background-color: rgb(56, 156, 187);
+}
+
 @media (max-width: 650px) {
     #container header {
         position: relative;
