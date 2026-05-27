@@ -1,3 +1,5 @@
+import { openStoryModal } from "./modal.js";
+
 const form = document.getElementById('post-form');
 
 form.addEventListener('submit', function(event) {
@@ -26,6 +28,9 @@ form.addEventListener('submit', function(event) {
             <p>${historia.replace('/\n/g', '<br /')}</p>
             <hr />`;
 
+    article.addEventListener('click', function() {
+        openStoryModal(titulo, autor, historia);
+    })
 
     document.getElementById('historias').appendChild(article)
 

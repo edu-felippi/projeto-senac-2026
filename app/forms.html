@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/forms.css">
     <script src="./scripts/menu.js" defer></script>
-    <script src="./scripts/forms.js" defer></script>
+    <script type="module" src="./scripts/forms.js"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Lacquer&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Lacquer&family=Love+Ya+Like+A+Sister&display=swap');
     </style>
     <title>Viajei: Criar Blog</title>
 </head>
@@ -27,19 +27,24 @@
                 <label for="autor"> Autor: </label>
                 <input id="autor" type="text" name="autor" placeholder="Fulano da Silva">
 
-                <label for="titulo"> Título da história: </label>
+                <label for="titulo"> Título: </label>
                 <input id="titulo" type="text" name="titulo" placeholder="pensando ilimitado">
 
                 <label for="email"> Email: </label>
-                <input id="email" type="email" name="email" placeholder="fulano123@example.com"><br>
+                <input id="email" type="email" name="email" placeholder="fulano123@example.com">
 
                 <label for="historia"> Sua História: </label><br>
-                <textarea id="historia" cols="50" rows="20" name="historia"></textarea><br>
+                <textarea id="historia" cols="20" rows="10" name="historia"></textarea>
 
                 <button type="submit"> Enviar </button>
 
             </form>
         </section>
+
+        <dialog id="modal">
+            <button autofocus>Fechar</button>
+            <div id="modal-content"></div>
+        </dialog>
 
         <footer>
             <div id="historias"></div>

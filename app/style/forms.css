@@ -61,15 +61,111 @@ header a:hover {
 }
 
 #container section form {
-    text-align: center;
     margin-top: 30px;
     font-family: "Bubblegum Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-article.artigo {
-    background-color: rgb(56, 156, 187);
+input[type="text"] {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    box-shadow: 5px 5px 6px 0px rgb(34, 106, 134);
+    font-family: "Love Ya Like A Sister", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Efeito ao clicar no campo */
+input[type="text"]:focus {
+    border: 2px solid #555;
+    outline: none;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    box-shadow: 5px 5px 6px 0px rgb(34, 106, 134);
+    font-family: "Love Ya Like A Sister", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Efeito ao clicar no campo */
+input[type="email"]:focus {
+    border: 2px solid #555;
+    outline: none;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 2px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    box-shadow: 5px 5px 6px 0px rgb(34, 106, 134);
+    font-family: "Love Ya Like A Sister", cursive;
+    font-weight: 400;
+    font-style: normal;
+    resize: none;
+}
+
+/* Efeito ao clicar no campo */
+textarea:focus {
+    border: 2px solid #555;
+    outline: none;
+}
+
+button[type="submit"] {
+    /* Cores e fontes */
+    background-color: rgb(34, 106, 134); 
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+
+    /* Tamanho e espaçamento */
+    padding: 10px 25px; /* Espaço interno (cima/baixo e esquerda/direita) */
+    width: 120px;
+    
+    /* Bordas */
+    border: none;
+    border-radius: 5px;
+
+    /* Cursor e transição */
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff6b81;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve */
+}
+
+dialog#modal::backdrop{
+    background-color: #4e5e57aa;
+}
+
+article.artigo p {
+    max-height: 60px;
+    overflow: hidden;
+    font-family: "Love Ya Like A Sister", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 @media (max-width: 650px) {
@@ -135,6 +231,10 @@ article.artigo {
         bottom: 220px;
         border-bottom: 2px solid pink;
     }
+
+}
+
+@media (max-width: 650px) {
 
 }
 
