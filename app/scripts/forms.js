@@ -22,8 +22,8 @@ form.addEventListener('submit', function(event) {
     article.className = "artigo";
 
     article.innerHTML =
-        `<h3>${titulo}</h3>
-            <p><strong> Autor: ${autor} </strong></p>
+        `<h2>${titulo}</h2>
+            <h4><strong> Autor: ${autor} </strong></h4>
             <p><small> Email: ${email} </small></p>
             <p>${historia.replace('/\n/g', '<br /')}</p>
             <hr />`;

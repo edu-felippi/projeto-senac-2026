@@ -9,7 +9,7 @@ closeModalButton.addEventListener('click', function () {
 export function openStoryModal(titulo, autor, historia) {
     modalContent.innerHTML = `
         <h2>${titulo}</h2>
-        <p><strong>Autor:</strong> ${autor}</p>
+        <h4><strong>Autor:</strong> ${autor}</h4>
         <p style="white-space: pre-wrap">${historia} </p>
     `
 

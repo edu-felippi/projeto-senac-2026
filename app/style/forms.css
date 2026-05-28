@@ -4,9 +4,24 @@
 
 body {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     margin: 0;
     background-color: rgba(112, 216, 202, 0.5);
+}
+
+body::-webkit-scrollbar {
+    width: 14px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: rgb(172, 230, 222);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(34, 106, 134);
+    border-radius: 20px;
+    border: 3px solid rgb(172, 230, 222);
 }
 
 #container {
@@ -50,7 +65,7 @@ body {
 
 #container section {
     width: 100%;
-    height: 80vh;
+    height: 70vh;
 }
 
 header a:hover {
@@ -156,8 +171,106 @@ button[type="submit"]:hover {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve */
 }
 
-dialog#modal::backdrop{
+dialog#modal::backdrop {
     background-color: #4e5e57aa;
+    backdrop-filter: blur(8px);
+}
+
+dialog#modal {
+    background-color: rgb(172, 230, 222);
+    border-radius: 10px;
+    border-width: 2px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    border-color: rgb(0, 0, 0);
+    overflow-wrap: break-word;
+    width: 50%;
+}
+
+dialog#modal::-webkit-scrollbar {
+  width: 12px;
+}
+
+dialog#modal::-webkit-scrollbar-track {
+  background: rgb(172, 230, 222);
+  border-radius: 10px;
+}
+
+dialog#modal::-webkit-scrollbar-thumb {
+  background-color: rgb(34, 106, 134);
+  border-radius: 20px;
+  border: 3px solid rgb(172, 230, 222);
+}
+
+dialog#modal button {
+    /* Cores e fontes */
+    background-color: rgb(34, 106, 134); 
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+
+    /* Tamanho e espaçamento */
+    padding: 5px 10px; /* Espaço interno (cima/baixo e esquerda/direita) */
+    width: 75px;
+    
+    /* Bordas */
+    border: none;
+    border-radius: 5px;
+
+    /* Cursor e transição */
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+dialog#modal button:hover {
+    background-color: #ff6b81;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve */
+}
+
+dialog#modal h2 {
+    font-family: "Bubblegum Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+dialog#modal h4 {
+    font-family: "Lacquer", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+dialog#modal p {
+    font-family: "Love Ya Like A Sister", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+article.artigo {
+    background: rgb(172, 230, 222);
+    border-top: 1px solid #555;
+    border-radius: 5px;
+    padding: 0px 15px;
+    box-shadow: 0px 1px 5px black;
+    margin-top: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+article.artigo h2 {
+    font-family: "Bubblegum Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+article.artigo h4 {
+    font-family: "Lacquer", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
 article.artigo p {
@@ -166,6 +279,7 @@ article.artigo p {
     font-family: "Love Ya Like A Sister", cursive;
     font-weight: 400;
     font-style: normal;
+    overflow-wrap: break-word;
 }
 
 @media (max-width: 650px) {
@@ -231,10 +345,6 @@ article.artigo p {
         bottom: 220px;
         border-bottom: 2px solid pink;
     }
-
-}
-
-@media (max-width: 650px) {
 
 }
 
