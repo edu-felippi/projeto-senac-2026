@@ -1,5 +1,6 @@
 class ContaBancaria:
-
+    
+    titular: str
     saldo: float = 0.0
 
     def __init__(self, titular: str):
@@ -11,8 +12,7 @@ class ContaBancaria:
 
     def sacar(self, valor: float)-> bool:
         if self.saldo - valor < 0:
-            self.saldo = self.saldo - valor
-            return True
-        else:
-            self.saldo
             return False
+        
+        self.saldo = self.saldo - valor
+        return True
