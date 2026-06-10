@@ -1,7 +1,5 @@
 class CarrinhoDeCompras:
 
-    
-
     def __init__(self):
         self.itens = []
         self.precos = []

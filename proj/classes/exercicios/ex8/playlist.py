@@ -10,11 +10,12 @@ class Playlist:
         self.musicas.append(nome_musica)
 
     def remover_musica(self, nome_musica: str):
-        for nome_musica in self.musicas:
+        if nome_musica in self.musicas:
             self.musicas.remove(nome_musica)
-        return "Música não encontrada"
+        else:
+            return "Música não encontrada"
     
     def mostrar_playlist(self):
-        print(self.nome)
-        for nome_musica in self.musicas:
-            print(nome_musica)
+        print(self.nome, "-------------------------")
+        for musica in self.musicas:
+            print(musica)
