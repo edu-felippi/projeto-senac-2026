@@ -1,11 +1,11 @@
 from heroi import Heroi
 
-class Mago(Heroi):
+class Guerreiro(Heroi):
 
     def __init__(self, nome, vida):
         super().__init__(nome, vida)
-        self.poder_magico = 30
+        self.forca_fisica = 40
 
     def atacar(self):
-        self.poder_magico += 10
-        return self.poder_magico
+        self.forca_fisica *= 2
+        return self.forca_fisica
