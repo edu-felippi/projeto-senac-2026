@@ -1,0 +1,2 @@
+class ItemInutilException(Exception):
+    pass

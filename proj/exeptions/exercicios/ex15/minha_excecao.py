@@ -1,0 +1,2 @@
+class NumeroNegativoError(Exception):
+    pass
