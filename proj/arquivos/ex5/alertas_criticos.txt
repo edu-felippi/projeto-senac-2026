@@ -1,0 +1,2 @@
+ERROR: Falha no banco de dados ao tentar salvar registro.
+ERROR: Tempo limite de requisição excedido (Timeout).
