@@ -1,10 +1,9 @@
 def filtrar_erros():
-
-    filtro = []
-    with open('proj/arquivos/ex5/sistema.log', 'r') as arquivo, open('proj/arquivos/ex5/alertas_criticos.txt', 'a') as alerta:
-        for line in arquivo.readlines():
-            if 'ERROR' in line.startswith():
-                alerta.write(line)
+    with open('proj/arquivos/ex5/sistema.log', 'r') as arquivo:
+        with open('proj/arquivos/ex5/alertas_criticos.txt', 'w') as alerta:
+            for line in arquivo.readlines():
+                if line.startswith('ERROR'):
+                    alerta.write(line)
                 
 
 
