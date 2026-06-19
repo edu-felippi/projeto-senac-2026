@@ -1,0 +1,2 @@
+class PlantaInvalidaError(Exception):
+    pass
