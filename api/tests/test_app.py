@@ -10,7 +10,7 @@ def test_root(client):
 
 def test_create_user(client):
     response = client.post(
-        "/auth/",
+        "/users/",
         json={
             "email": "jorge@example.com",
             "password": "secret",

@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    background-color: rgba(112, 216, 202, 0.5);
+}
+
+body::-webkit-scrollbar {
+    width: 14px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: rgb(172, 230, 222);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(34, 106, 134);
+    border-radius: 20px;
+    border: 3px solid rgb(172, 230, 222);
+}
+
+#container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#container header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: rgba(36, 147, 132, 0.5);
+    box-shadow: 5px 5px 7px 0px rgb(34, 106, 134);
+}
+
+#container header img {
+    max-width: 80px;
+}
+
+#container header .toggle {
+    display: none;
+    height: 20px;
+    width: 20px;
+}
+
+.link-do-cabecalho {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-right: 15px;
+    color: #fffdf5;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-weight: bold; /*500*/
+    font-size: 15pt;
+    padding: 12px 25px;
+    background-color: rgb(56, 156, 187);
+    border-radius: 15px;
+}
+
+#container section {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+}
+
+header a:hover {
+    background-color: rgb(32, 92, 110, 0.6);
+    box-shadow: 5px 5px 6px 0px pink;
+    transition: background-color 0.5s;
+    transition: box-shadow 0.5;
+}
+
+#container section form {
+    margin-top: 30px;
+    font-family: "Bubblegum Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+form {
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    box-shadow: 5px 5px 6px 0px rgb(34, 106, 134);
+    font-family: "Love Ya Like A Sister", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Efeito ao clicar no campo */
+input[type="password"]:focus {
+    border: 2px solid #555;
+    outline: none;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    box-shadow: 5px 5px 6px 0px rgb(34, 106, 134);
+    font-family: "Love Ya Like A Sister", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Efeito ao clicar no campo */
+input[type="email"]:focus {
+    border: 2px solid #555;
+    outline: none;
+}
+
+button[type="submit"] {
+    /* Cores e fontes */
+    background-color: rgb(34, 106, 134); 
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+
+    /* Tamanho e espaçamento */
+    padding: 10px 25px; /* Espaço interno (cima/baixo e esquerda/direita) */
+    width: 100%;
+    margin-bottom: 5px;
+    
+    /* Bordas */
+    border: none;
+    border-radius: 5px;
+
+    /* Cursor e transição */
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff6b81;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve */
+}
