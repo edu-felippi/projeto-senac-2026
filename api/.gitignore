@@ -5,3 +5,4 @@ __pycache__
 htmlcov
 poetry.lock
 .coverage
+database.db
