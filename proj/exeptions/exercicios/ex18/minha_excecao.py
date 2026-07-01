@@ -1,2 +1,0 @@
-class ContaBloqueadaError(Exception):
-    pass

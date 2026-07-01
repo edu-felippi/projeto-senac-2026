@@ -1,2 +1,0 @@
-class ElevadorSobrecargadoError(Exception):
-    pass

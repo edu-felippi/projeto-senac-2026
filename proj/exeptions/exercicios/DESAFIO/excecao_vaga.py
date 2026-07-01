@@ -1,2 +1,0 @@
-class VagaOcupadaException(Exception):
-    pass

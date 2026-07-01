@@ -1,2 +1,0 @@
-class NumeroNegativoError(Exception):
-    pass

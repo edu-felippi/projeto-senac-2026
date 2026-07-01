@@ -1,2 +1,0 @@
-class PlantaInvalidaError(Exception):
-    pass
