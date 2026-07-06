@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/login.css">
-    <script type="module" src="./scripts/login.js"></script>
+    <script src="./scripts/auth.js" defer></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Bubblegum+Sans&family=Lacquer&family=Love+Ya+Like+A+Sister&display=swap');
     </style>
@@ -15,16 +15,16 @@
 <body>
     <div id="container">
         <section>
-            <form id="post-form">
+            <form id="auth">
                 <label for="email"> Email: </label>
                 <input id="email" type="email" name="email" placeholder="fulano123@example.com">
 
                 <label for="password"> password: </label>
                 <input id="password" type="password" name="password" placeholder="Digite Sua Senha">
 
-                <button type="submit"> Fazer Login </button>
+                <button type="submit" id="login_acc"> Fazer Login </button>
 
-                <button type="submit"> Criar Conta </button>
+                <button type="submit" id="create_acc"> Criar Conta </button>
 
             </form>
 </body>
